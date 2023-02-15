@@ -1,0 +1,112 @@
+
+
+.h-titulo-rta{
+    font-family: 'Inter', sans-serif;
+    color: rgba(75, 74, 74, 0.836);
+    font-size: 4.3rem;
+    font-weight: bolder;
+    text-align: center;
+    margin-top: 2%;
+}
+
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+   /*  align-items: center; */
+    border-radius: 10px;
+    
+}
+
+.card{
+     background-image: repeating-radial-gradient(circle farthest-corner at -1% 0%,#d4c6c6 ,#f1cf70 55%); 
+  /*   background-color: #6c757d; */
+
+    font-family: 'Inter', sans-serif;
+    position: relative;
+    width: 400px;
+    height: 500px;
+    margin: 60px 20px 20px 50px;
+    border-radius: 20px;
+   /*  align-content: center; */
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction:column;
+    /* margin: 35px auto; */
+    box-shadow: 3px 2px 3px 2px #1d191933
+}
+
+h4{
+   margin-left: 20px;
+   font-family: 'Inter', sans-serif;
+   font-weight: bold;
+   color: #7a7878;
+
+}
+
+h5{
+    margin-left: 10px;
+    margin-top: 10px;
+   font-family: 'Inter', sans-serif;
+   font-weight: bold;
+   font-size: 15px;
+   color: #292929;
+   text-decoration: underline;
+}
+
+.botonVolver{
+    padding: 10px 20px;
+    background-color:  rgb(153, 146, 146);
+    color: #f1cf70;
+    border: none;
+    box-shadow: 3px 2px 3px 2px rgba(0,0,0,0.2);
+    font-size: 28px;
+    margin-right: 20px;
+
+    cursor: pointer;
+    transition: all 500ms;
+    border-radius: 5px;
+}
+
+.buton-container-rta{
+    display: block;
+    text-align: center;
+     margin: 2% auto;
+}
+@media(min-width: 1800px ){
+    h5{
+        font-size: 22px;
+    }
+
+.card{
+    width: 400px;
+        height: 520px;
+    }
+}
+
+@media only screen and (max-width : 900px){
+    .h-titulo-rta{
+        margin-top: 10%;
+    }
+    .card-container{
+        align-items: center;
+        margin: 5% auto;
+    }
+    .card{
+        width: 300px;
+        height: 450px;
+        margin: 40px 10px 5px 20px;
+    }
+    h4{
+        margin-left: 20px;
+        font-size: 18px;
+    }
+    h5{
+        margin-left: 15px;
+        margin-top: 5px;
+    }
+    .buton-container-rta{
+        margin: 10% auto;
+    }
+}
